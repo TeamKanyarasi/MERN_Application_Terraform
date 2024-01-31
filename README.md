@@ -3,7 +3,7 @@ Deploying a MERN Application on AWS using Terraform and Ansible.
 ## Objective:
 Gain practical experience in deploying a MERN stack application on AWS using infrastructure automation with Terraform and configuration management with Ansible.
 ## Prerequisites:
-Fork the React Application from https://github.com/UnpredictablePrashant/TravelMemory
+Fork the MERN Application from https://github.com/UnpredictablePrashant/TravelMemory
 ### Part 1: Infrastructure Setup with Terraform
 
 1. AWS Setup and Terraform Initialization:
