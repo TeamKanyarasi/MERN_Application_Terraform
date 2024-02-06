@@ -10,7 +10,7 @@ resource "google_compute_firewall" "mern-firewall" {
 
   allow {
     protocol = "tcp"
-    ports    = ["80", "3000", "3001"]
+    ports    = ["22", "80", "3000", "3001"]
   }
 
   source_ranges = ["0.0.0.0/0"]

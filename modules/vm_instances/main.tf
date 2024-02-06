@@ -16,6 +16,12 @@ resource "google_compute_instance" "web-server" {
       // Ephemeral IP
     }
   }
+  
+  metadata_startup_script = <<-EOF
+    #!/bin/bash
+    sudo apt-get update -y
+    sudo apt-get install -y ansible
+  EOF
 }
 
 resource "google_compute_instance" "db-server" {
@@ -33,4 +39,10 @@ resource "google_compute_instance" "db-server" {
     network = var.vpc_network_name
     subnetwork = var.private_subnet_name
   }
+
+  metadata_startup_script = <<-EOF
+    #!/bin/bash
+    sudo apt-get update -y
+    sudo apt-get install -y ansible
+  EOF
 }
