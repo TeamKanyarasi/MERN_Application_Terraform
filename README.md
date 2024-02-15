@@ -32,7 +32,7 @@ Fork the MERN Application from https://github.com/UnpredictablePrashant/TravelMe
 
 3. VM Instance Provisioning:
 
-   - Launch two EC2 instances: one in the public subnet (for the web server) and another in the private subnet (for the database).
+   - Launch two VM instances: one in the public subnet (for the web server) and another in the private subnet (for the database).
 
 ![Screenshot (150)](https://github.com/TeamKanyarasi/MERN_Application_Terraform/assets/139607786/448809c5-63b9-4c94-a593-2cac731a6248)
 
