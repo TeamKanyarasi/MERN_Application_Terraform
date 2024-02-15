@@ -30,7 +30,7 @@ Fork the MERN Application from https://github.com/UnpredictablePrashant/TravelMe
 
 ![Screenshot (152)](https://github.com/TeamKanyarasi/MERN_Application_Terraform/assets/139607786/54a73e9f-c723-4e53-aefb-43c710911a54)
 
-3. EC2 Instance Provisioning:
+3. VM Instance Provisioning:
 
    - Launch two EC2 instances: one in the public subnet (for the web server) and another in the private subnet (for the database).
 
@@ -42,11 +42,11 @@ Fork the MERN Application from https://github.com/UnpredictablePrashant/TravelMe
 
    - Create necessary security groups for web and database servers.
 
-   - Set up IAM roles for EC2 instances with required permissions.
+   - Set up IAM roles for VM instances with required permissions.
 
 5. Resource Output:
 
-   - Output the public IP of the web server EC2 instance.
+   - Output the public IP of the web server VM instance.
   
 ![Screenshot (155)](https://github.com/TeamKanyarasi/MERN_Application_Terraform/assets/139607786/8cb8bbad-da52-4d85-b3fe-3ced1c0d3ccf)
 
