@@ -64,11 +64,15 @@ Fork the MERN Application from https://github.com/UnpredictablePrashant/TravelMe
 
    - Clone the MERN application repository and install dependencies.
 
+     https://github.com/TeamKanyarasi/MERN_Application_Terraform/blob/main/webserver_deployment.yml
+     
 3. Database Server Setup:
 
    - Install and configure MongoDB on the database server using Ansible.
 
    - Secure the MongoDB instance and create necessary users and databases.
+
+     https://github.com/TeamKanyarasi/MERN_Application_Terraform/blob/main/dbserver_deployment.yml
 
 4. Application Deployment:
 
