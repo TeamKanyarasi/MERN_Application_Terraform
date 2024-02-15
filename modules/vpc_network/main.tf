@@ -10,7 +10,7 @@ resource "google_compute_firewall" "mern-firewall" {
 
   allow {
     protocol = "tcp"
-    ports    = ["22", "80", "3000", "3001"]
+    ports    = ["22", "80", "3000", "3001", "3389", "443"]
   }
 
   source_ranges = ["0.0.0.0/0"]
@@ -50,13 +50,4 @@ resource "google_compute_route" "public-subnet-route" {
   next_hop_gateway = "default-internet-gateway"
   priority         = 1000
   tags             = ["public-subnet"]
-}
-
-resource "google_compute_route" "private-subnet-route" {
-  name             = "private-subnet-route"
-  dest_range       = "0.0.0.0/0"
-  network          = google_compute_network.vpc_network.self_link
-  next_hop_gateway = google_compute_router_nat.nat.name
-  priority         = 1000
-  tags             = ["private-subnet"]
 }

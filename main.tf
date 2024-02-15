@@ -9,8 +9,8 @@ terraform {
 
 provider "google" {
   # Configuration options
-  credentials = file("C:/Users/chara/Downloads/round-folio-413206-89f0ca82366e.json")
-  project     = "My First Project"
+  credentials = file("C:/Users/chara/Downloads/round-folio-413206-58fe396a4f1a.json")
+  project     = "round-folio-413206"
   region      = "asia-south1"
 }
 
@@ -24,4 +24,8 @@ module "vm_instances" {
   public_subnet_name = module.vpc.public_subnet_name
   private_subnet_name = module.vpc.private_subnet_name
   
+}
+
+output "web-server-public-ip" {
+  value = module.vm_instances.web-server-public-ip
 }
