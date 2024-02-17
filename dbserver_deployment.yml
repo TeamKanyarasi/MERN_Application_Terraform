@@ -2,6 +2,10 @@
 - hosts: dbserver
   become: yes
   tasks:
+    - name: Updating the server
+      shell: |
+        apt-get update -y
+        apt-get upgrade -y
     - name: Import the MongoDB public GPG Key
       ansible.builtin.apt_key:
         url: https://www.mongodb.org/static/pgp/server-4.4.asc
