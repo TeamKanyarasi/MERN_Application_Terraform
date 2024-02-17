@@ -93,8 +93,18 @@ Fork the MERN Application from https://github.com/UnpredictablePrashant/TravelMe
 
    - Ensure the React frontend communicates with the Express backend.
 
+![Screenshot (159)](https://github.com/TeamKanyarasi/MERN_Application_Terraform/assets/139607786/702eff3d-f076-4777-9e5a-63686c865a19)
+
+![Screenshot (160)](https://github.com/TeamKanyarasi/MERN_Application_Terraform/assets/139607786/faeed75f-3610-44d5-be2b-e92a52ea0544)
+
 5. Security Hardening:
 
    - Harden the security by configuring firewalls and security groups.
 
    - Implement additional security measures as needed (e.g., SSH key pairs, disabling root login).
+
+![Screenshot (161)](https://github.com/TeamKanyarasi/MERN_Application_Terraform/assets/139607786/6767ee2b-e26b-4d9a-b9a7-b97b89ea9363)
+
+![Screenshot (162)](https://github.com/TeamKanyarasi/MERN_Application_Terraform/assets/139607786/dad36335-39b0-41b4-b7ba-e8f2c55b71e1)
+
+
