@@ -56,7 +56,20 @@ Fork the MERN Application from https://github.com/UnpredictablePrashant/TravelMe
 
 1. Ansible Configuration:
 
+   - Launch 2 EC2 instances : one `Ansible worker node` and one `Webserver node`.
+
+![Screenshot (157)](https://github.com/TeamKanyarasi/MERN_Application_Terraform/assets/139607786/4b240adf-55ca-476d-af3f-1c7c954922e5)
+
    - Configure Ansible to communicate with the AWS EC2 instances.
+   ```
+   sudo apt update
+   sudo apt install openssh-server
+   sudo apt install software-properties-common
+   sudo add-apt-repository --yes --update ppa:ansible/ansible
+   sudo apt install ansible
+   ansible --version
+   ```
+![Screenshot (158)](https://github.com/TeamKanyarasi/MERN_Application_Terraform/assets/139607786/ef687778-b55a-49dd-abfc-533242b7570d)
 
 2. Web Server Setup:
 
