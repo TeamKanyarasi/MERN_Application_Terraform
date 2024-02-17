@@ -19,7 +19,7 @@
     - name: Clone the MERN application repository
       git:
         repo: 'https://github.com/UnpredictablePrashant/TravelMemory.git'
-        path: /home/ubuntu/TravelMemory
+        dest: /home/ubuntu/TravelMemory
     - name: Install dependencies in backend
       shell: |
         cd /home/ubuntu/TravelMemory/backend
@@ -38,7 +38,11 @@
         cd /home/ubuntu/TravelMemory/frontend
         echo "PORT=3000" >> .env
     - name: Run MERN backend
-      shell: node index.js
+      shell: |
+        cd /home/ubuntu/Travelmemory/backend
+        node index.js
     - name: Run MERN frontend
-      shell: npm start
+      shell: |
+        cd /home/ubuntu/Travelmemory/frontend
+        npm start
 
