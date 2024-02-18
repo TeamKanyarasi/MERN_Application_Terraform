@@ -38,10 +38,14 @@
         cd /home/ubuntu/TravelMemory/frontend
         echo "PORT=3000" >> .env
     - name: Run MERN backend
+      async: 1
+      poll: 0
       shell: |
         cd /home/ubuntu/TravelMemory/backend
         node index.js
     - name: Run MERN frontend
+      async: 1
+      poll: 0
       shell: |
         cd /home/ubuntu/TravelMemory/frontend
         npm start
